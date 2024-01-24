@@ -1,0 +1,445 @@
+/* Adicione estas regras CSS ao seu arquivo style.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    list-style-type: none;
+}
+body {
+    background-color: #24252a !important; /* Define a cor de fundo para o corpo da página */
+    /* Outros estilos para o body, se necessário */
+}
+
+header {
+    background-color: #24252a;
+    box-shadow: 0px 3px 10px #464646;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 50px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo h1 {
+    color: #fff;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-item {
+    margin: 0 10px;
+    margin-top: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.15rem;
+    color: #fff;
+    font-weight: 400;
+}
+
+.login-button button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #004aad;
+    margin-top: 15px;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+@media screen and (max-width: 730px) {
+    .nav-bar {
+        padding: 1.5rem 4rem;
+    }
+    .nav-item {
+        display: none;
+    }
+    .login-button {
+        display: none;
+    }
+    .mobile-menu-icon {
+        display: block;
+    }
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+    }
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+    .open {
+        display: block;
+    }
+}
+@media screen and (max-width: 1085px) {
+    .acao-container {
+        display: grid;
+        grid-row: 80%;
+        row-gap: 150px;
+    }
+  }
+
+@media screen and (max-width: 450px) {
+    .logo img {
+        width: 250px;
+    }
+}
+
+.carousel-inner {
+    background-color: #24252a;
+    border-bottom: 10px solid #24252a; /* Adiciona uma linha de separação na cor #24252a */
+}
+
+.login-button.carousel-button {
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    background-color: #004aad;
+    margin-top: 15px;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.conteudo {
+    position: relative;
+    height: 700px; /* Defina a altura conforme necessário */
+    background: url('img/fundo1.png') center/cover no-repeat;
+    color: #fff;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adiciona uma sobreposição para melhor legibilidade do texto */
+}
+
+.content {
+    z-index: 1;
+    padding: 20px;
+}
+
+/* Adicione estas regras CSS ao seu arquivo style.css */
+.conteudo {
+    position: relative;
+    height: 500px; /* Defina a altura conforme necessário */
+    background: url('img/fundo1.png') center/cover no-repeat;
+    color: #fff;
+    text-align: left; /* Ajuste para alinhar o texto à esquerda */
+    display: flex;
+    align-items: center;
+    border-bottom: 10px solid #24252a; /* Adiciona uma linha de separação */
+    
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adiciona uma sobreposição para melhor legibilidade do texto */
+}
+
+.content {
+    z-index: 1;
+    padding: 20px;
+    max-width: 600px; /* Defina a largura máxima do conteúdo conforme necessário */
+    margin-left: 60px; /* Adiciona um espaço à esquerda para manter o conteúdo alinhado à esquerda */
+}
+
+/* Adiciona estilo específico para a div conteudo */
+.conteudo h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #ffcc00; /* Cor do título */
+    
+}
+
+.conteudo p {
+    font-size: 1.2em;
+    color: #a0a0a0; /* Cor do texto */
+    margin-top: 60px; /* Adiciona espaço acima do parágrafo */
+}
+/* Estilos do botão Quero Ajudar */
+.conteudo .ajudar-button {
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.conteudo .ajudar-button:hover {
+    background-color: #003366;
+}
+/* CONTEUDO 2 */
+.conteudo2 {
+    text-align: center;
+    background-image: url('img/fundo2.png'); /* Substitua pelo caminho correto da sua imagem */
+    background-size: cover; /* Garante que a imagem cubra toda a área designada */
+    background-position: center; /* Centraliza a imagem */
+    padding: 200px; /* Adicione ou ajuste o preenchimento conforme necessário */
+    color: #fff; /* Define a cor do texto para garantir legibilidade */
+    padding: 20px 0px;
+}
+
+.acao-container {
+    
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 50px;
+}
+
+.acao-container .acao1,
+.acao-container .acao2,
+.acao-container .acao3 {
+    text-align: center;
+    margin-bottom: 200px;
+}
+
+.acao-container h3,
+.acao-container p {
+    margin: 0;
+    margin-bottom: 50px;
+}
+.acao1,
+.acao2,
+.acao3 {
+    flex-basis: 300px; /* Largura fixa para cada seção */
+    text-align: center;
+    width: 100%; /* Ocupa toda a largura disponível */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 30px; /* Adiciona espaço entre os blocos de ação */
+}
+.acao1 img,
+.acao2 img,
+.acao3 img {
+    margin-bottom: 30px; /* Adiciona margem abaixo dos ícones */
+}
+.acao1 h3,
+.acao2 h3,
+.acao3 h3 {
+    margin-top: 10px; /* Adiciona margem acima dos títulos */
+    color: #ffcc00;
+    
+}
+
+.acao1 p,
+.acao2 p,
+.acao3 p {
+    text-align: center; /* Alinha o parágrafo ao centro */
+    max-width: 100%; /* Define a largura máxima para 100% da largura da div pai */
+    margin: 50px auto 0; /* Adiciona margem superior entre o parágrafo e o título e centraliza o bloco de texto horizontalmente */
+    
+}
+.acao-button {
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 50px; /* Adiciona margem superior entre os botões */
+    
+}
+
+.acao-button:hover {
+    background-color: #003366;
+}
+
+
+/*rodapé*/
+
+/* Estilos para os ícones sociais */
+.social-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.icon {
+    margin: 0 10px;
+}
+
+.icon img {
+    width: 30px; /* Tamanho dos ícones */
+}
+
+/* Estilos para o copyright no rodapé */
+footer {
+    background-color: #24252a;
+    color: #fff;
+    padding: 10px 50px;
+    text-align: center;
+    position: relative;
+}
+
+.copyright {
+    font-size: 0.8rem;
+    position: relative;
+    z-index: 1;
+    margin-top: 20px;
+}
+
+/* Estilos para o popup */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+  }
+  
+  .popup form {
+    background-color: white;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .popup form input,
+  .popup form textarea,
+  .popup form button {
+    display: block;
+    margin-bottom: 10px;
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+  }
+  
+  .popup form button {
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .popup form button:hover {
+    background-color: #003366;
+  }
+  .postagem p {
+    color: white;
+  }
+  /* botão  enviar*/
+  #openFormButton {
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: block;
+    margin: 0 auto;
+    font-size: 24px; /* Tamanho da fonte do botão */
+    padding: 15px 30px; /* Espaçamento interno do botão */
+    display: block;
+    margin: 20px auto; 
+}
+/* Estilo específico para o botão "Fechar" */
+#closeFormButton {
+    background-color: #004aad;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+  }
+  
+  #closeFormButton:hover {
+    background-color: #003366;
+  }
+/* Estilos para o layout de grade */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px; /* Espaçamento entre as imagens */
+  }
+  .postagem {
+    /* Estilos para cada postagem */
+    text-align: center; /* Centraliza o conteúdo */
+    border: 1px solid #ffcc00; /* Adiciona uma borda para visualização */
+    padding: 10px; /* Espaçamento interno */
+  }
+  
+  .postagem img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse a largura da postagem */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços em branco abaixo da imagem */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    width: 500px; /* Tamanho fixo para largura da imagem */
+  height: 300px; /* Tamanho fixo para altura da imagem */
+  }

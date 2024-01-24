@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Resgatos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="logo">
+                <img src="img/logo2.png" alt="logo">
+            </div>
+            <div class="nav-list">
+                <ul>
+                    <li class="nav-item"><a href="index.html" class="nav-link">Início</a></li>
+                    <li class="nav-item"><a href="resgate.html" class="nav-link">Resgate</a></li>
+                    <li class="nav-item"><a href="index.html#sobre" class="nav-link" id="linkSobre">Sobre</a></li>    
+                </ul>
+            </div>
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+
+            <div class="mobile-menu-icon">
+                <button onclick="menuShow()"><img class="icon" src="img/menu_white_36dp.svg" alt=""></button>
+            </div>
+        </nav>
+        <div class="mobile-menu">
+            <ul>
+                <li class="nav-item"><a href="#" class="nav-link">Início</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Resgate</a></li>
+                <li class="nav-item"><a href="#" class="nav-link">Sobre</a></li>
+            </ul>
+
+            <div class="login-button">
+                <button><a href="#">Entrar</a></button>
+            </div>
+        </div>
+    </header>
+    <script src="script.js"></script>
+
+    <!--formulario pra postar foto-->
+<!-- Div para exibir as postagens -->
+<div id="postagens" class="grid-container"></div>
+<!-- Botão para abrir o formulário -->
+<button id="openFormButton">Resgate</button>
+
+<!-- Formulário para fazer o upload da imagem e legenda -->
+<div id="uploadForm" class="popup">
+    <button id="closeFormButton">Fechar</button>
+  <form>
+    <input type="file" name="imageFile" accept="image/*" required>
+    <textarea name="caption" placeholder="Digite a legenda..." required></textarea>
+    <input type="text" name="address" placeholder="Digite o endereço..." required>
+    <button type="submit">Enviar</button>
+  </form>
+</div>
+
+    <!-- rodapé-->
+
+<footer>
+        <div class="social-icons">
+            <a href="#" class="icon"><img src="img/facebook.png" alt="Facebook"></a>
+            <a href="#" class="icon"><img src="img/instagram.png" alt="Instagram"></a>
+            <a href="#" class="icon"><img src="img/twitter.png" alt="Twitter"></a>
+            <a href="#" class="icon"><img src="img/youtube.png" alt="YouTube"></a>
+        </div>
+        <div class="copyright">
+            &copy; 2023 Resgatos
+        </div>
+</footer>
+
+    
+</body>
+</html>

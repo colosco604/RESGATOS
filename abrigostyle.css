@@ -1,0 +1,48 @@
+/* Estilos para o título */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500&display=swap');
+
+body {
+    background-color: #24252a !important; /* Define a cor de fundo para o corpo da página */
+    /* Outros estilos para o body, se necessário */
+}
+
+h1 {
+    color: #fff; /* Define a cor branca para o título */
+       text-align: center; /* Centraliza o texto */
+    padding: 20px 0; /* Adiciona um espaçamento interno acima e abaixo do título */
+}
+    
+    /* Estilos para as palavras com a classe "yellow" */
+.yellow {
+        color: #ffcc00; /* Define a cor amarela para as palavras */
+}
+
+
+/* Estilos para as imagens */
+img {
+    display: block; /* Para garantir que as imagens sejam exibidas como blocos */
+    margin: 0 auto; /* Centralizar as imagens horizontalmente */
+    max-width: 100%; /* Garantir que as imagens não ultrapassem a largura da tela */
+    height: auto; /* Para manter a proporção da imagem */
+    margin-bottom: 20px; /* Adicionar espaço entre as imagens */
+    width: 300px;
+}
+.image-container {
+    text-align: center; /* Centraliza todo o conteúdo */
+    
+}
+
+.image-container a {
+    display: block; /* Mostra cada imagem em um bloco, uma abaixo da outra */
+    text-decoration: none; /* Remove a decoração do link */
+    margin-bottom: 100px; /* Adiciona espaço entre as imagens */
+}
+
+.image-container figure {
+    text-align: center; /* Centraliza o texto dentro do contêiner */
+}
+
+.image-container figcaption {
+    color: #fff; /* Define a cor branca para o texto */
+    margin-top: 5px; /* Adiciona espaço entre a imagem e o texto */
+}
